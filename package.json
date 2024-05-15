@@ -1,0 +1,38 @@
+{
+  "name": "public-r2-bucket",
+  "version": "0.0.0",
+  "description": "Cloudflare worker allowing read access (with byte range request support) to R2 buckets.",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/worker.js --bundle --format=esm --outfile=dist/worker.mjs",
+    "lint": "standard",
+    "test": "npm run build && entail"
+  },
+  "author": "Alan Shaw",
+  "license": "Apache-2.0 OR MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240512.0",
+    "buffer": "^6.0.3",
+    "byteranges": "^1.1.0",
+    "entail": "^2.1.2",
+    "esbuild": "^0.21.2",
+    "miniflare": "^3.20240512.0",
+    "standard": "^17.0.0",
+    "uint8arrays": "^5.1.0"
+  },
+  "dependencies": {
+    "@httpland/range-parser": "^1.2.0",
+    "@web3-storage/gateway-lib": "^5.0.1",
+    "multipart-byte-range": "^2.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nftstorage/dagcargo-bucket.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nftstorage/dagcargo-bucket/issues"
+  },
+  "homepage": "https://github.com/nftstorage/dagcargo-bucket#readme"
+}
