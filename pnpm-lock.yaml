@@ -35,7 +35,7 @@ devDependencies:
     specifier: ^3.20240512.0
     version: 3.20240512.0
   standard:
-    specifier: ^17.0.0
+    specifier: ^17.1.0
     version: 17.1.0
   uint8arrays:
     specifier: ^5.1.0

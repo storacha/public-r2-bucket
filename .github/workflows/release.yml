@@ -7,8 +7,22 @@ jobs:
   release-staging:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: ./.github/actions/test
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.3
+        with:
+          version: 8
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          registry-url: https://registry.npmjs.org/
+          cache: 'pnpm'
+      - name: Install
+        run: pnpm install
+      - name: Build
+        run: pnpm build
       - name: Deploy to Staging
         uses: cloudflare/wrangler-action@2.0.0
         with:
@@ -22,8 +36,27 @@ jobs:
         with:
           release-type: node
           package-name: public-r2-bucket
-      - uses: actions/checkout@v3
-      - uses: ./.github/actions/test
+      - name: Checkout
+        uses: actions/checkout@v3
+        if: ${{ steps.release.outputs.release_created }}
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.3
+        with:
+          version: 8
+        if: ${{ steps.release.outputs.release_created }}
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          registry-url: https://registry.npmjs.org/
+          cache: 'pnpm'
+        if: ${{ steps.release.outputs.release_created }}
+      - name: Install
+        run: pnpm install
+        if: ${{ steps.release.outputs.release_created }}
+      - name: Build
+        run: pnpm build
+        if: ${{ steps.release.outputs.release_created }}
       - name: Deploy to Production
         uses: cloudflare/wrangler-action@2.0.0
         with:
