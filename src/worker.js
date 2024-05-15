@@ -15,27 +15,11 @@ import { MultipartByteRange } from 'multipart-byte-range'
  * @typedef {{ BUCKET: import('@cloudflare/workers-types').R2Bucket }} Environment
  */
 
-export default {
-  /** @type {import('@web3-storage/gateway-lib').Handler<import('@web3-storage/gateway-lib').Context, Environment>} */
-  fetch (request, env, ctx) {
-    console.log(request.method, request.url)
-    const middleware = composeMiddleware(
-      withCdnCache,
-      withContext,
-      withCorsHeaders,
-      withErrorHandler,
-      createWithHttpMethod('GET', 'HEAD'),
-      withFixedLengthStream
-    )
-    return middleware(handler)(request, env, ctx)
-  }
-}
-
 /**
  * @param {Request} request
  * @param {Environment} env
  */
-async function handler (request, env) {
+const handler = async (request, env) => {
   const url = new URL(request.url)
   const key = url.pathname.slice(1)
 
@@ -125,4 +109,20 @@ const handleMultipartRange = async (bucket, key, size, ranges, options) => {
   }
 
   return new Response(source, { status: 206, headers })
+}
+
+export default {
+  /** @type {import('@web3-storage/gateway-lib').Handler<import('@web3-storage/gateway-lib').Context, Environment>} */
+  fetch (request, env, ctx) {
+    console.log(request.method, request.url)
+    const middleware = composeMiddleware(
+      withCdnCache,
+      withContext,
+      withCorsHeaders,
+      withErrorHandler,
+      createWithHttpMethod('GET', 'HEAD'),
+      withFixedLengthStream
+    )
+    return middleware(handler)(request, env, ctx)
+  }
 }
