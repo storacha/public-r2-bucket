@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/w3s-project/public-r2-bucket/compare/v1.0.0...v1.1.0) (2024-05-16)
+
+
+### Features
+
+* encode bucket name in domain ([#2](https://github.com/w3s-project/public-r2-bucket/issues/2)) ([747d9e5](https://github.com/w3s-project/public-r2-bucket/commit/747d9e53409c14afb4dbd5207c5eec69a97492b7))
+
 ## 1.0.0 (2024-05-16)
 
 
