@@ -1,6 +1,6 @@
 {
   "name": "public-r2-bucket",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Cloudflare worker allowing read access (with byte range request support) to R2 buckets.",
   "main": "index.js",
   "type": "module",
