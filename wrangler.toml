@@ -13,7 +13,7 @@ DEBUG = "true"
 [env.carpark-production]
 account_id = "fffa4b4363a7e5250af8357087263b3a"
 r2_buckets = [{ binding = "BUCKET", bucket_name = "carpark-prod-0" }]
-route = { pattern = "https://carpark.w3s.link/*", zone_id = "ae60d8f737317467ec666dc3851a6277" }
+route = { pattern = "https://carpark-prod-0.r2.w3s.link/*", zone_id = "ae60d8f737317467ec666dc3851a6277" }
 
 [env.carpark-production.vars]
 DEBUG = "false"
@@ -22,4 +22,4 @@ DEBUG = "false"
 [env.carpark-staging]
 account_id = "fffa4b4363a7e5250af8357087263b3a"
 r2_buckets = [{ binding = "BUCKET", bucket_name = "carpark-staging-0" }]
-route = { pattern = "https://carpark-staging.w3s.link/*", zone_id = "ae60d8f737317467ec666dc3851a6277" }
+route = { pattern = "https://carpark-staging-0.r2.w3s.link/*", zone_id = "ae60d8f737317467ec666dc3851a6277" }
