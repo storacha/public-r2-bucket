@@ -12,14 +12,10 @@ import { HttpError, decodeRangeHeader, resolveRange } from '@web3-storage/gatewa
 import { MultipartByteRange } from 'multipart-byte-range'
 
 /**
- * @typedef {{ BUCKET: import('@cloudflare/workers-types').R2Bucket }} Environment
- */
-
-/**
  * @param {Request} request
- * @param {Environment} env
+ * @param {import('./worker.js').Environment} env
  */
-const handler = async (request, env) => {
+export const handler = async (request, env) => {
   const url = new URL(request.url)
   const key = url.pathname.slice(1)
 
@@ -112,7 +108,7 @@ const handleMultipartRange = async (bucket, key, size, ranges, options) => {
 }
 
 export default {
-  /** @type {import('@web3-storage/gateway-lib').Handler<import('@web3-storage/gateway-lib').Context, Environment>} */
+  /** @type {import('@web3-storage/gateway-lib').Handler<import('@web3-storage/gateway-lib').Context, import('./worker.js').Environment>} */
   fetch (request, env, ctx) {
     console.log(request.method, request.url)
     const middleware = composeMiddleware(
