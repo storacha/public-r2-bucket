@@ -4,7 +4,6 @@
   "description": "Cloudflare worker allowing read access (with byte range request support) to R2 buckets.",
   "main": "src/worker.js",
   "type": "module",
-  "private": true,
   "scripts": {
     "build": "esbuild src/worker.js --bundle --format=esm --outfile=dist/worker.mjs",
     "lint": "standard",
