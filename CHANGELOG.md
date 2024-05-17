@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/w3s-project/public-r2-bucket/compare/v1.1.0...v1.2.0) (2024-05-17)
+
+
+### Features
+
+* deploy to npm ([a43103a](https://github.com/w3s-project/public-r2-bucket/commit/a43103a843fa31762954fa943b102082c913ce6c))
+
 ## [1.1.0](https://github.com/w3s-project/public-r2-bucket/compare/v1.0.0...v1.1.0) (2024-05-16)
 
 
