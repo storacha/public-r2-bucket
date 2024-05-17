@@ -26,7 +26,7 @@ jobs:
         run: pnpm install
       - name: Build
         run: pnpm build
-      - name: Deploy to Staging
+      - name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_TOKEN }}
