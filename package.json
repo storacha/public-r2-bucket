@@ -27,16 +27,17 @@
   "dependencies": {
     "@httpland/range-parser": "^1.2.0",
     "@web3-storage/gateway-lib": "^5.0.1",
+    "@web3-storage/public-bucket": "^1.0.0",
     "multipart-byte-range": "^2.0.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nftstorage/dagcargo-bucket.git"
+    "url": "git+https://github.com/w3s-project/public-bucket.git"
   },
   "bugs": {
-    "url": "https://github.com/nftstorage/dagcargo-bucket/issues"
+    "url": "https://github.com/w3s-project/public-bucket/issues"
   },
-  "homepage": "https://github.com/nftstorage/dagcargo-bucket#readme",
+  "homepage": "https://github.com/w3s-project/public-bucket#readme",
   "standard": {
     "ignore": [
       "*.ts"

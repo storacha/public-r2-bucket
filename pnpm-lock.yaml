@@ -11,6 +11,9 @@ dependencies:
   '@web3-storage/gateway-lib':
     specifier: ^5.0.1
     version: 5.0.1(uglify-js@3.17.4)
+  '@web3-storage/public-bucket':
+    specifier: ^1.0.0
+    version: 1.0.0
   multipart-byte-range:
     specifier: ^2.0.2
     version: 2.0.2
@@ -1323,6 +1326,13 @@ packages:
       source-map: 0.6.1
       uglify-js: 3.17.4
       yargs: 16.2.0
+    dev: false
+
+  /@web3-storage/public-bucket@1.0.0:
+    resolution: {integrity: sha512-Yn7E4ze50ldLPtK6zAuyYM/mEGGoQhFan6pX0zPScEoB8ehlJCwqALD+vLg7KA4DO3DGEPuFbhN0O+qR3ihr3Q==}
+    dependencies:
+      '@httpland/range-parser': 1.2.0
+      multipart-byte-range: 2.0.2
     dev: false
 
   /abortable-iterator@4.0.3:
