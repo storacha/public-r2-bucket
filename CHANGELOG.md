@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/w3s-project/public-r2-bucket/compare/v1.2.0...v1.2.1) (2024-05-17)
+
+
+### Bug Fixes
+
+* not private ([8d713f0](https://github.com/w3s-project/public-r2-bucket/commit/8d713f0a33372eef22142ee31d16d3bfe0b58494))
+
 ## [1.2.0](https://github.com/w3s-project/public-r2-bucket/compare/v1.1.0...v1.2.0) (2024-05-17)
 
 
