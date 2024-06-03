@@ -25,10 +25,8 @@
     "uint8arrays": "^5.1.0"
   },
   "dependencies": {
-    "@httpland/range-parser": "^1.2.0",
     "@web3-storage/gateway-lib": "^5.0.1",
-    "@web3-storage/public-bucket": "^1.0.0",
-    "multipart-byte-range": "^2.0.2"
+    "@web3-storage/public-bucket": "^1.1.0"
   },
   "repository": {
     "type": "git",

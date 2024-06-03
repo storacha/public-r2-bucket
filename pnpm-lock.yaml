@@ -5,18 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@httpland/range-parser':
-    specifier: ^1.2.0
-    version: 1.2.0
   '@web3-storage/gateway-lib':
     specifier: ^5.0.1
     version: 5.0.1(uglify-js@3.17.4)
   '@web3-storage/public-bucket':
-    specifier: ^1.0.0
-    version: 1.0.0
-  multipart-byte-range:
-    specifier: ^2.0.2
-    version: 2.0.2
+    specifier: ^1.1.0
+    version: 1.1.0
 
 devDependencies:
   '@cloudflare/workers-types':
@@ -1328,11 +1322,13 @@ packages:
       yargs: 16.2.0
     dev: false
 
-  /@web3-storage/public-bucket@1.0.0:
-    resolution: {integrity: sha512-Yn7E4ze50ldLPtK6zAuyYM/mEGGoQhFan6pX0zPScEoB8ehlJCwqALD+vLg7KA4DO3DGEPuFbhN0O+qR3ihr3Q==}
+  /@web3-storage/public-bucket@1.1.0:
+    resolution: {integrity: sha512-Fo9TXZ5lq0f8mn5is1paZ+31jKQYZl4/SAGdeeUGWMiHMX9vTPHVhhOyjK7hazlnLLRI/iO5srjNlb6s3zpoAQ==}
     dependencies:
       '@httpland/range-parser': 1.2.0
-      multipart-byte-range: 2.0.2
+      multipart-byte-range: 3.0.1
+      p-defer: 4.0.1
+      uint8arraylist: 2.4.8
     dev: false
 
   /abortable-iterator@4.0.3:
@@ -3523,6 +3519,13 @@ packages:
       byteranges: 1.1.0
     dev: false
 
+  /multipart-byte-range@3.0.1:
+    resolution: {integrity: sha512-+LVbrwBmkEyClExud3FSN9xZuo0ZFWJ2yg0PxJCvnwjMch2x4Q0IXkpc97rF8k17/kNG37vN82NxVgOrQ07wlg==}
+    dependencies:
+      streamsearch-web: 1.0.0
+      uint8arraylist: 2.4.8
+    dev: false
+
   /murmurhash3js-revisited@3.0.0:
     resolution: {integrity: sha512-/sF3ee6zvScXMb1XFJ8gDsSnY+X8PbOyjIuBhtgis10W2Jx4ZjIhikUCIF9c4gpJxVnQIsPAFrSwTCuAjicP6g==}
     engines: {node: '>=8.0.0'}
@@ -4181,6 +4184,11 @@ packages:
   /streaming-iterables@8.0.1:
     resolution: {integrity: sha512-yfQdmUB1b+rGLZkD/r6YisT/eNOjZxBAckXKlzYNmRJnwSzHaiScykD8gsQceFcShtK09qAbLhOqvzIpnBPoDQ==}
     engines: {node: '>=18'}
+    dev: false
+
+  /streamsearch-web@1.0.0:
+    resolution: {integrity: sha512-KBBU/O/xSjbr1z+NPwLE9iTrE3Pc/Ue7HumjvjjP1t7oYIM35OOMYRy/lZBoIwsiSKTnQ+uF8QbaJEa7FdJIzA==}
+    engines: {node: '>=18.0.0'}
     dev: false
 
   /string-width@4.2.3:
