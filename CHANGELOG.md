@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0](https://github.com/w3s-project/public-r2-bucket/compare/v1.2.1...v1.3.0) (2024-06-03)
+
+
+### Features
+
+* batching byte getter ([f63e26b](https://github.com/w3s-project/public-r2-bucket/commit/f63e26b17a37e94aa6a6effa7d39f28cf78957f9))
+* use public-bucket lib ([7d75c93](https://github.com/w3s-project/public-r2-bucket/commit/7d75c9386872a3aeea3329e9b7b33598f78c4a9c))
+
 ## [1.2.1](https://github.com/w3s-project/public-r2-bucket/compare/v1.2.0...v1.2.1) (2024-05-17)
 
 
