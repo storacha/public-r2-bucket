@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/storacha-network/public-r2-bucket/compare/v1.3.0...v1.4.0) (2024-06-21)
+
+
+### Features
+
+* configure max batch size ([#7](https://github.com/storacha-network/public-r2-bucket/issues/7)) ([237d178](https://github.com/storacha-network/public-r2-bucket/commit/237d1788c97973c12436286008b6173dfc94a122))
+
 ## [1.3.0](https://github.com/w3s-project/public-r2-bucket/compare/v1.2.1...v1.3.0) (2024-06-03)
 
 
