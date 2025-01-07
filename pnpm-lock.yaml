@@ -12,8 +12,8 @@ importers:
         specifier: ^5.0.1
         version: 5.0.1(uglify-js@3.17.4)
       '@web3-storage/public-bucket':
-        specifier: ^1.2.0
-        version: 1.2.0
+        specifier: ^1.3.0
+        version: 1.3.0
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20240512.0
@@ -629,8 +629,8 @@ packages:
     peerDependencies:
       uglify-js: ^3.1.4
 
-  '@web3-storage/public-bucket@1.2.0':
-    resolution: {integrity: sha512-VERzzCejCB+6i5gnckmadMTaVvLRwA71Eu4sqZIynzxStuQCFPEGKMJvjRXoPqlNz73iY2jfylkanOtoX5eatA==}
+  '@web3-storage/public-bucket@1.3.0':
+    resolution: {integrity: sha512-Y7YayKvUOxa/if30X5glDjYpzMNCAKePmLMbiEpl/2ScVM/yEad46JXK/XqT/6X4l/T8UkB/96/88+Bbn68dsw==}
 
   abortable-iterator@4.0.3:
     resolution: {integrity: sha512-GJ5fyS9O0hK/TMf+weR+WMEwSEBWVuStHqHmUYWbfHPULyVf7QdUnAvh41+1cUWtHVf0Z/qtQynidxz4ZFDPOg==}
@@ -3158,7 +3158,7 @@ snapshots:
       uglify-js: 3.17.4
       yargs: 16.2.0
 
-  '@web3-storage/public-bucket@1.2.0':
+  '@web3-storage/public-bucket@1.3.0':
     dependencies:
       '@httpland/range-parser': 1.2.0
       multipart-byte-range: 3.0.1
