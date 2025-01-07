@@ -5,7 +5,7 @@
   "main": "src/worker.js",
   "type": "module",
   "scripts": {
-    "build": "esbuild src/worker.js --bundle --format=esm --outfile=dist/worker.mjs",
+    "build": "esbuild src/worker.js --bundle --format=esm --external:node:buffer --external:node:events --external:node:async_hooks --outfile=dist/worker.mjs",
     "lint": "standard",
     "test": "npm run build && entail"
   },
@@ -25,8 +25,12 @@
     "uint8arrays": "^5.1.0"
   },
   "dependencies": {
+    "@microlabs/otel-cf-workers": "1.0.0-rc.49",
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/sdk-trace-base": "^1.30.0",
     "@web3-storage/gateway-lib": "^5.0.1",
-    "@web3-storage/public-bucket": "^1.2.0"
+    "@web3-storage/public-bucket": "^1.2.0",
+    "typescript": "^5.7.2"
   },
   "repository": {
     "type": "git",
