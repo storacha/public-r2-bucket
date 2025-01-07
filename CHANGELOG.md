@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/storacha/public-r2-bucket/compare/v1.5.0...v1.5.1) (2025-01-07)
+
+
+### Bug Fixes
+
+* **wranger:** use string true vars ([9ef0950](https://github.com/storacha/public-r2-bucket/commit/9ef0950c93f5260545e3b5c7a3a2e714cb36bfa9))
+
 ## [1.5.0](https://github.com/storacha/public-r2-bucket/compare/v1.4.0...v1.5.0) (2025-01-07)
 
 
