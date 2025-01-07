@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/storacha/public-r2-bucket/compare/v1.4.0...v1.5.0) (2025-01-07)
+
+
+### Features
+
+* **worker:** add tracing to bucket, when parent context is present ([#9](https://github.com/storacha/public-r2-bucket/issues/9)) ([494bc2d](https://github.com/storacha/public-r2-bucket/commit/494bc2dc10d51347190dbba24dae465d7007e7fe))
+
 ## [1.4.0](https://github.com/storacha-network/public-r2-bucket/compare/v1.3.0...v1.4.0) (2024-06-21)
 
 
