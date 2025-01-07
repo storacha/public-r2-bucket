@@ -6,7 +6,8 @@ import * as ByteRanges from 'byteranges'
 const mf = new Miniflare({
   modules: true,
   scriptPath: `${import.meta.dirname}/../dist/worker.mjs`,
-  compatibilityDate: '2024-05-15',
+  compatibilityFlags: ['nodejs_compat'],
+  compatibilityDate: '2024-09-23',
   r2Buckets: ['BUCKET']
 })
 
