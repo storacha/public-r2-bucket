@@ -9,6 +9,7 @@ command = "npm run build"
 
 [vars]
 DEBUG = "true"
+FF_TELEMETRY_ENABLED = "false"
 
 # PROD!
 [env.carpark-production]
@@ -18,7 +19,7 @@ route = { pattern = "https://carpark-prod-0.r2.w3s.link/*", zone_id = "ae60d8f73
 
 [env.carpark-production.vars]
 DEBUG = "false"
-FF_TELEMETRY_ENABLED = true
+FF_TELEMETRY_ENABLED = "true"
 
 # STAGING!
 [env.carpark-staging]
@@ -27,7 +28,7 @@ r2_buckets = [{ binding = "BUCKET", bucket_name = "carpark-staging-0" }]
 route = { pattern = "https://carpark-staging-0.r2.w3s.link/*", zone_id = "ae60d8f737317467ec666dc3851a6277" }
 
 [env.carpark-staging.vars]
-FF_TELEMETRY_ENABLED = true
+FF_TELEMETRY_ENABLED = "true"
 DEBUG = "true"
 
 # HANNAH DEV TESTING!
