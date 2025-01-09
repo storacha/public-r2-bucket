@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.2](https://github.com/storacha/public-r2-bucket/compare/v1.5.1...v1.5.2) (2025-01-09)
+
+
+### Bug Fixes
+
+* **deps:** update public bucket to 1.4.0 ([4002068](https://github.com/storacha/public-r2-bucket/commit/4002068bc2a85929707df3bb0247e27e1ad3d39e))
+
 ## [1.5.1](https://github.com/storacha/public-r2-bucket/compare/v1.5.0...v1.5.1) (2025-01-07)
 
 
