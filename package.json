@@ -1,6 +1,6 @@
 {
   "name": "@web3-storage/public-r2-bucket",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "Cloudflare worker allowing read access (with byte range request support) to R2 buckets.",
   "main": "src/worker.js",
   "type": "module",
