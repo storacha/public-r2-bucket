@@ -68,10 +68,15 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
         if: ${{ steps.release.outputs.release_created }}
-      - name: Deploy to Cloudflare
+      - name: Deploy to Cloudflare (carpark-production)
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_TOKEN }}
           environment: 'carpark-production'
         if: ${{ steps.release.outputs.release_created }}
-        
+      - name: Deploy to Cloudflare (carpark-production-1)
+        uses: cloudflare/wrangler-action@2.0.0
+        with:
+          apiToken: ${{ secrets.CF_TOKEN }}
+          environment: 'carpark-production-1'
+        if: ${{ steps.release.outputs.release_created }}
