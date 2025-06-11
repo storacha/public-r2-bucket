@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/storacha/public-r2-bucket/compare/v1.5.2...v1.6.0) (2025-06-11)
+
+
+### Features
+
+* deploy additional production bucket ([#15](https://github.com/storacha/public-r2-bucket/issues/15)) ([cd21987](https://github.com/storacha/public-r2-bucket/commit/cd2198793fc4a41970619a0db1ac258fe5200838))
+
 ## [1.5.2](https://github.com/storacha/public-r2-bucket/compare/v1.5.1...v1.5.2) (2025-01-09)
 
 
