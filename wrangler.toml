@@ -21,6 +21,15 @@ route = { pattern = "https://carpark-prod-0.r2.w3s.link/*", zone_id = "ae60d8f73
 DEBUG = "false"
 FF_TELEMETRY_ENABLED = "true"
 
+[env.carpark-production-1]
+account_id = "fffa4b4363a7e5250af8357087263b3a"
+r2_buckets = [{ binding = "BUCKET", bucket_name = "carpark-prod-1" }]
+route = { pattern = "https://carpark-prod-1.r2.w3s.link/*", zone_id = "ae60d8f737317467ec666dc3851a6277" }
+
+[env.carpark-production-1.vars]
+DEBUG = "false"
+FF_TELEMETRY_ENABLED = "true"
+
 # STAGING!
 [env.carpark-staging]
 account_id = "fffa4b4363a7e5250af8357087263b3a"
