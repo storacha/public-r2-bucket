@@ -5,6 +5,7 @@ Cloudflare worker allowing read access (with byte range request support) to R2 b
 Current public buckets managed by this repo:
 
 * [carpark-prod-0.r2.w3s.link](https://carpark-prod-0.r2.w3s.link/) - PRODUCTION
+* [carpark-prod-1.r2.w3s.link](https://carpark-prod-1.r2.w3s.link/) - PRODUCTION (used by piri node on storage network)
 * [carpark-staging-0.r2.w3s.link](https://carpark-staging-0.r2.w3s.link/) - STAGING
 
 ## Contributing
